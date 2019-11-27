@@ -7,22 +7,28 @@ Most recent revision: 7:37pm
 <html lang="en">
     <head>
         <title>Deni's Portfolio</title>
+        <link href="teststyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            header {
+                background-color: darkgrey;
+            }
+        </style>
     </head>
     
     <body>
         <header>
             <h1>Portfolio for Deni Balak</h1>
         </header>
-        <nav>
-        <hr />
+        <nav class="border">
+        <hr style="border: thin dotted red;" />
             <p><a href="projects.html">Projects</a></p>
             <p><a href="contact.html">Contact</a></p>
             <p><a href="testimonials.html">Testimonials</a></p>
-        <hr />
+        <hr class="width: 50%; border: 2px solid blueviolet;"/>
         </nav>
        
         <section>
-            <article id="about-me">
+            <article id="about-me" class="border">
                 <h2><em>About Me</em></h2>
                 <img src="images/first-day-of-school.jpg" alt="Portrait of Deni Balak" />
                 <p>I grew up in <strong>Texas</strong> but moved to <strong>Arkansas</strong> to attend the <span style="background-color: lavender; border: thin solid purple;"> University of Central Arkansas, where I received a full-ride scholarship.</span> I married my best friend since high school during my second year in college. He served in the Air Force and, just before my last semester of college, was moved to a base in Florida. I returned to school in Arkansas for 6 months, graduated early, and then returned to <strong>Florida</strong> where we lived for one year.</p>
@@ -32,19 +38,67 @@ Most recent revision: 7:37pm
             <article id="past-experiences">
                 <h2><em>Past Experiences</em></h2>
                 <img src="images/classroom.jpg" alt="College Classroom" />
-                <p>From January 2017 to December 2017, I worked at the <strong>Faulkner County Juvenile Court</strong> in Conway, Arkansas. I was a Risk Assessment Intern, meaning my job was to analyze their newly implemented risk assessment tool and determine its effectiveness in reducing juvenile recidivism rates.</p>
-                <p>During my time with FCJC, I was able to obtain research that accurately proved that the SAVRY risk assessment tool, when effectively implemented, was able to reduce the number of repeat juvenile offenders.</p>
+             <table>
+                <caption>Employment History</caption>
+                 <tr>
+                     <th>Years of Employment</th>
+                     <th>Title</th>
+                     <th>Employer</th>
+                 </tr>
+                 <tr>
+                    <td>2018-Present</td>
+                     <td>Jan. 2017-Dec. 2017</td>
+                     <td>2015-2018</td>
+                 </tr>
+                 <tr>
+                    <td>Teacher</td>
+                    <td>Risk Assessment Analysis Intern</td>
+                    <td>Subtitute Teacher</td>
+                 </tr>
+                 <tr>
+                    <td>Princeton ISD</td>
+                     <td>Faulkner County Juvenile Court</td>
+                     <td>Princeton ISD</td>
+                 </tr>
+                </table>
             </article>
        
             <article id="hobbies">
                 <h2><em>Hobbies</em></h2>
-                <img src="images/code.jpg" alt="Image of code" />
-                <p>In my down time I enjoy many things. Read, writing, and playing games are among my favorite past times. However, I also enjoy brainteasers and puzzles like sudoku and word searches.</p>
-                <p>My interest in coding and programming was sparked during my search to find something that would be both exciting and challenging. I began practicing code through codecadamy and have been hooked ever since.</p>
+                <img src="images/books.jpg" alt="Image of books" />
+                <ul>
+                    <li>Reading</li>
+                    <ol>
+                        <li>Tennessee Williams</li>
+                        <li>William Shakespeare</li>
+                        <li>Arthur Miller</li>
+                    </ol>
+                    <li>Music</li>
+                    <ol>
+                        <li>Nirvana</li>
+                        <li>A Day to Remember</li>
+                        <li>Motley Crue</li>
+                    </ol>
+                </ul>
+                <ul>
+                    <li>TV Shows</li>
+                    <ul>
+                        <li>Gilmore Girls</li>
+                        <li>The Office</li>
+                        <li>Parks and Recreation</li>
+                    </ul>
+                    <li>Misc.</li>
+                    <ul>
+                        <li>Writing</li>
+                        <li>Working Out</li>
+                        <li>Playing Video Games</li>
+                    </ul>
+                </ul>
+                
             </article>
         </section>
        
-        <footer>
+        <footer style="background-color: fuchsia">
             <hr />
             <p>&copy; 2020 Deni Balak. All rights reserved.</p>
         </footer>
