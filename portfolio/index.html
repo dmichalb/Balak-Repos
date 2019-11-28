@@ -7,10 +7,38 @@ Most recent revision: 7:37pm
 <html lang="en">
     <head>
         <title>Deni's Portfolio</title>
-        <link href="teststyles.css" rel="stylesheet" type="text/css" />
+        
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
         <style>
             header {
-                background-color: darkgrey;
+                background-color: darkgreen;
+            }
+            caption {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 8px;
+            }
+            table, th, td {
+                border: 1px solid #0d1f2d;
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+            table {
+                width: 90%;
+                margin: auto;
+            }
+            tr {
+                height: 30px;
+            }
+            th {
+                background-color: darkgreen;
+                color: white;
+            }
+            tr:nth-child(odd){
+                background-color:azure;
+            }
+            tr:nth-child(even){
+                background-color: lightgreen;
             }
         </style>
     </head>
@@ -20,11 +48,10 @@ Most recent revision: 7:37pm
             <h1>Portfolio for Deni Balak</h1>
         </header>
         <nav class="border">
-        <hr style="border: thin dotted red;" />
             <p><a href="projects.html">Projects</a></p>
             <p><a href="contact.html">Contact</a></p>
             <p><a href="testimonials.html">Testimonials</a></p>
-        <hr class="width: 50%; border: 2px solid blueviolet;"/>
+            <div class="clear-float"></div>
         </nav>
        
         <section>
@@ -33,18 +60,23 @@ Most recent revision: 7:37pm
                 <img src="images/first-day-of-school.jpg" alt="Portrait of Deni Balak" />
                 <p>I grew up in <strong>Texas</strong> but moved to <strong>Arkansas</strong> to attend the <span style="background-color: lavender; border: thin solid purple;"> University of Central Arkansas, where I received a full-ride scholarship.</span> I married my best friend since high school during my second year in college. He served in the Air Force and, just before my last semester of college, was moved to a base in Florida. I returned to school in Arkansas for 6 months, graduated early, and then returned to <strong>Florida</strong> where we lived for one year.</p>
                 <p>We moved back to Texas in 2018 and now own a home in Gainesville. He is currently halfway finished with his degree to become a pilot and I am in my second year of teaching middle school English.</p>
+            <div class="clear-float"></div>
             </article>
         
             <article id="past-experiences">
                 <h2><em>Past Experiences</em></h2>
                 <img src="images/classroom.jpg" alt="College Classroom" />
-             <table>
+                <div class="right-content">
+                <table>
                 <caption>Employment History</caption>
+               <thead>
                  <tr>
                      <th>Years of Employment</th>
                      <th>Title</th>
                      <th>Employer</th>
                  </tr>
+                 </thead>
+                 <tbody>
                  <tr>
                     <td>2018-Present</td>
                      <td>Jan. 2017-Dec. 2017</td>
@@ -60,12 +92,16 @@ Most recent revision: 7:37pm
                      <td>Faulkner County Juvenile Court</td>
                      <td>Princeton ISD</td>
                  </tr>
+                 </tbody>
                 </table>
+                </div>
+            <div class="clear-float"></div>
             </article>
        
             <article id="hobbies">
                 <h2><em>Hobbies</em></h2>
                 <img src="images/books.jpg" alt="Image of books" />
+                <div class="right-content">
                 <ul>
                     <li>Reading</li>
                     <ol>
@@ -94,12 +130,12 @@ Most recent revision: 7:37pm
                         <li>Playing Video Games</li>
                     </ul>
                 </ul>
-                
+                </div>
+                <div class="clear-float"></div>
             </article>
         </section>
        
-        <footer style="background-color: fuchsia">
-            <hr />
+        <footer style="background-color: darkgreen">
             <p>&copy; 2020 Deni Balak. All rights reserved.</p>
         </footer>
    
