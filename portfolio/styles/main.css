@@ -1,0 +1,62 @@
+/*
+Creator: Deni Balak
+Date Created: 11/28/19
+Date Last Modified:
+*/
+body {
+    background-color: azure;
+    font-family: times new roman, serif;
+    color: forestgreen;
+    max-width: 900px;
+    margin: 0 auto;
+}
+header, footer {
+    background-color: darkgreen;
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+h1 {
+    font-size: 2.5em;
+}
+nav {
+    border-top: 3px dashed #546a7b;
+    border-bottom: 3px dashed #546a7b;
+    margin-top: 4px;
+}
+.clear-float{
+    clear:both;
+}
+article img {
+    float:left;
+}
+.right-content {
+    float: left;
+}
+article {
+    margin-bottom: 16px
+}
+nav a {
+    background-color:forestgreen;
+    color: white;
+    padding: 8px;
+    border: thin solid;
+    border-color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20 px;
+    width: 100px;
+    float: left;
+}
+nav a:hover {
+    background-color: azure;
+    color: darkgreen;
+}
+nav a:active {
+    font-weight: bold;
+}
+nav a:visited {
+    color: lawngreen;
+}
