@@ -2,6 +2,48 @@
 <html>
     <head>
         <title>Contact Us</title>
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <style>
+            h1 {
+            font-family: 'Josefin Sans', sans-serif;
+            }
+            body {
+                background-color: cornsilk;
+            }
+            form label.required {
+                font-weight: bold;
+            }
+            label, fieldset {
+                font-size: 1.1em;
+            }
+            input[type=text] {
+                padding: 5px 5px;
+                margin: 10px 0;
+                box-sizing: border-box;
+                font-size: 1.1em;
+            }
+            fieldset {
+                width: 100%;
+                padding: 10px 15 px;
+                margin: 10px 0;
+                box-sizing: border-box;
+            }
+            select, textarea {
+                margin: 12px 0px;
+                font-size: 1em;
+            }
+            input [type=submit] {
+                font-size: 1.2em;
+                padding 2px 6px;
+            }
+            textarea {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 12px 0;
+                border-radius: 3px;
+            }
+        </style>
     </head>
     
     <body>
@@ -16,41 +58,48 @@
             <hr/>
         </nav>
         <form action="submit.html" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" name="name" /><br/>
-            <label for="email">Email:</label>
-            <input type="text" name="email" /><br/>
-            <label for="phone">Phone:</label>
-            <input type="text" name="phone" /><br/>
-            <label for="inquiry">Reason for Inquiry:</label>
-            <select id="inquiry" name="inquiry">
-                <option value="default" selected>Catering</option>
-                <option value="party">Private Party</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-            </select><br/>
-            <label for="info">Additional Information</label>
-            <textarea id="info" name="info"></textarea><br/>
-            <label for="question">Have you been to the restaurant?</label>
-            <input type="radio" id="choice1" name="question" value="no">
-            <label for="choice1">No</label>
-            <input type="radio" id="choice2" name="question" value="yes">
-            <label for="choice2">Yes</label><br/>
-            <label for="availability">Best days to contact you:</label>
-            <input type="checkbox" id="monday" name="availability" value="monday">
-            <label for="monday">M</label>
-            <input type="checkbox" id="tuesday" name="availability" value="tuesday">
-            <label for="tuesday">T</label>
-            <input type="checkbox" id="wednesday" name="availability" value="wednesday">
-            <label for="wednesday">W</label>
-            <input type="checkbox" id="thursday" name="availability" value="thursday">
-            <label for="thursday">Th</label>
-            <input type="checkbox" id="friday" name="availability" value="friday">
-            <label for="friday">F</label><br/>
+            <div>    
+                <label for="name" class="required">Name:</label>
+                    <input type="text" name="name" /><br/>
+                    <label for="email" class="required">Email:</label>
+                    <input type="text" name="email" /><br/>
+                    <label for="phone" class="required">Phone:</label>
+                    <input type="text" name="phone" /><br/>
+                <label for="inquiry" class="required">Reason for Inquiry:</label>
+                <select id="inquiry" name="inquiry">
+                    <option value="default" selected>Catering</option>
+                    <option value="party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </div> <br/>
+            <div>
+                <label for="info">Additional Information:</label>
+                <textarea id="info" name="info"></textarea>
+            </div><br/>
+            <div>
+                <label for="question">Have you been to the restaurant?</label>
+                <input type="radio" id="choice1" name="question" value="no">
+                <label for="choice1">No</label>
+                <input type="radio" id="choice2" name="question" value="yes">
+                <label for="choice2">Yes</label>
+            </div><br/>
+            <div>
+                <label for="availability" class="required">Best days to contact you:</label>
+                <input type="checkbox" id="monday" name="availability" value="monday">
+                <label for="monday">M</label>
+                <input type="checkbox" id="tuesday" name="availability" value="tuesday">
+                <label for="tuesday">T</label>
+                <input type="checkbox" id="wednesday" name="availability" value="wednesday">
+                <label for="wednesday">W</label>
+                <input type="checkbox" id="thursday" name="availability" value="thursday">
+                <label for="thursday">Th</label>
+                <input type="checkbox" id="friday" name="availability" value="friday">
+                <label for="friday">F</label>
+            </div><br/>
             <input type="submit" name="submit" value="Send Request">
-        </form>
+        </form><br/>
         <footer>
-        <hr/>
             <p>201 Elysian Fields Ave. New Orleans, LA, 70032</p>
             <p>(555)252-6243</p>
         </footer>
