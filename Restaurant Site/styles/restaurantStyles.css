@@ -1,0 +1,40 @@
+/* 
+Created by: Deni Balak
+Date Created: 11/29/2019
+Date Modified:
+*/
+header, footer {
+    background-color: indianred;
+    color: white;
+    text-align: center;
+}
+header {
+    font-size: 1.5em;
+    height: 100px;
+    padding: 10px 5px 20px 5px;
+}
+footer {
+    font-size: 1em;
+    padding: 5px 5px 5px 5px;
+    
+}
+nav {
+    text-align: center;
+}
+nav a{
+    background-color: darksalmon;
+    color: antiquewhite;
+    border: thin dashed;
+    padding: 5px;
+    display: inline-block;
+}
+nav a:active {
+    text-decoration: none;
+}
+nav a:visited {
+    background-color: rosybrown;
+    color: darkred;
+}
+nav a:hover {
+   font-weight: bold;
+}
