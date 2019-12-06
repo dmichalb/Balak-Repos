@@ -10,31 +10,39 @@ header, footer {
 }
 header {
     font-size: 1.5em;
-    height: 100px;
-    padding: 10px 5px 20px 5px;
+    height: 150px;
+    padding: 20px 5px 20px 5px;
 }
 footer {
     font-size: 1em;
-    padding: 5px 5px 5px 5px;
-    
+    padding: 5px 5px 5px 5px; 
 }
-nav {
-    text-align: center;
-}
-nav a{
+.nav-pills a{
     background-color: darksalmon;
     color: antiquewhite;
-    border: thin dashed;
-    padding: 5px;
-    display: inline-block;
 }
-nav a:active {
+.nav-pills a:active{
     text-decoration: none;
 }
-nav a:visited {
+.nav-pills:visited{
     background-color: rosybrown;
     color: darkred;
 }
-nav a:hover {
-   font-weight: bold;
+.nav-pills:hover{
+    font-weight: bold;
+}
+.nav-pills{
+    justify-content: center;
+}
+.carousel .item {
+    height: 100px;
+}
+.item img{
+    min-height: 100px;
+}
+.form-group {
+    justify-content: center;
+}
+input:invalid, input:invalid:required, select:invalid, select:invalid:required {
+    border: 1.5px solid red;
 }
