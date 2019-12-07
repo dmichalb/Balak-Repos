@@ -32,15 +32,15 @@
     <body>
         <div id="game" style="text-align: center">
             <h1>Lucky Sevens</h1>
-            <form>
+            <form onsubmit="play(); return false">
                 <span>Starting Bet:
-                    <input type="number" name="Starting Bet" id="bet" placeholder="$0.00"></span>
+                    <input type="number" name="Starting Bet" id="bet" placeholder="$0.00" /></span>
                 <br/>
-                <button onsubmit="play()" id="playButton">Play</button>
+                <input type="submit"  id="playButton" value="Play" />
             </form>
         </div>
         
-        <div class="hidden" id="resultsTable" onload="unhide(resultsTable);">
+        <div class="hidden" id="resultsTable">
             <table>
                 <caption><h2>Results</h2></caption>
                 <tr>
@@ -53,7 +53,7 @@
                 </tr>
                 <tr>
                     <td>Highest Amount Won</td>
-                    <td id="resultsMaxMoney"></td>
+                    <td id="resultMaxMoney"></td>
                 </tr>
                 <tr>
                     <td>Roll Count at Highest Amount Won</td>
@@ -64,6 +64,6 @@
     </body>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </html>
