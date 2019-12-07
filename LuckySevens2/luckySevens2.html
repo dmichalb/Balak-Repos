@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lucky Sevens</title>
+        <script type="text/javascript" src="styles/luckySevens2.js"></script>
+        <style type="text/css">
+            h1, span, button {
+                font-family: "Comic Sans MS";
+            }
+            h1 {
+                padding-top: 50px;
+                font-size: 4em;
+            }
+            form {
+                font-size: 2em;
+            }
+            button {
+                font-size: .8em;
+            }
+            table {
+                font-family: "Comic Sans MS";
+                text-align: left;
+            }
+            .hidden{
+                display: none;
+            }
+            .unhidden{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="game" style="text-align: center">
+            <h1>Lucky Sevens</h1>
+            <form>
+                <span>Starting Bet:
+                    <input type="number" name="Starting Bet" id="bet" placeholder="$0.00"></span>
+                <br/>
+                <button onsubmit="play()" id="playButton">Play</button>
+            </form>
+        </div>
+        
+        <div class="hidden" id="resultsTable" onload="unhide(resultsTable);">
+            <table>
+                <caption><h2>Results</h2></caption>
+                <tr>
+                    <th>Starting Bet</th>
+                    <th id="resultBet"></th>
+                </tr>
+                <tr>
+                    <td>Total Rolls Before Going Broke</td>
+                    <td id="resultRollCounter"></td>
+                </tr>
+                <tr>
+                    <td>Highest Amount Won</td>
+                    <td id="resultsMaxMoney"></td>
+                </tr>
+                <tr>
+                    <td>Roll Count at Highest Amount Won</td>
+                    <td id="resultMaxMoneyRoll"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
