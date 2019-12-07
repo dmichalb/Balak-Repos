@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
         <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
@@ -57,60 +57,12 @@
             </div>
         </header>
         <hr/>
-        <ul class="nav nav-pills">
-            <li><a class="btn badge-pill" href="home.html"><i class="fa fa-fw fa-home"></i></a></li>
-            <li><a class="btn badge-pill" href="menu.html">Menu</a></li>
-            <li><a class="btn badge-pill" href="contactUs.html">Contact Us</a></li>
-        </ul>
+        <nav class="nav nav-pills nav-fill">
+            <a class="btn badge-pill nav-item active" href="home.html"><i class="fa fa-fw fa-home"></i></a>
+            <a class="btn badge-pill nav-item" href="menu.html">Menu</a>
+            <a class="btn badge-pill nav-item" href="contactUs.html">Contact Us</a>
+        </nav>
         <hr/>
-        
-        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div  class="carousel-item active">
-                    <div class="view">
-                        <img class="d-block w-100" src="images/new-location.jpg" alt="First Slide">
-                        <div class="mask rgba-black-light"></div>
-                    </div>
-                    <div class="carousel-caption">
-                        <h3 class="h3-responsive">New Location!</h3>
-                        <p>Come visit us at our new location: the St. Charles Ave. and Carrollton Ave. streetcar.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="view">
-                        <img class="d-block w-100" src="images/seasonal-items.jpg" alt="Second Slide">
-                        <div class="carousel-caption"></div>
-                    </div>
-                    <div class="carousel-caption">
-                    <h3 class="h3-responsive">Seasonal Treats!</h3>
-                        <p>Our new seasonal menu rolls out December 16 and will feature holiday favorites such as roasted turkey and gravy with mashed potatoes, honey glazed ham with sweet potato casserole, and spicy cornbread stuffing.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="view">
-                        <img class="d-block w-100" src="images/bottle.jpg" alt="Third Slide">
-                        <div class="mask rgba-black-slight"></div>
-                    </div>
-                    <div class="carousel-caption">
-                        <h3 class="h3-responsive">Drink of the Month!</h3>
-                        <p>The Drink of the Month for December is SG Special Brew--a secret soda blend with hints of vanilla and root beer.</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div><br/>
         <form id="contactUs" name="contactUs" action="">
             <div class="container">
                 <div class="form-group">
@@ -171,11 +123,19 @@
             <div class="row">
                 <div class="col-lg">
                     <div class="form-group">
-                        <label for="question" >Have you been to the restaurant?</label><br/>
-                        <input class="form-check-input" type="radio" value="" id="question" name="question">
-                        <label class="form-check-label" for="question">Yes</label><br/>
-                        <input class="form-check-input" type="radio" name="question" id="question" value="">
-                        <label class="form-check-label" for="question">No</label>
+                        <div class="form-group form-group-inline">
+                        <label for="question" class="radio inline" >Have you been to the restaurant?</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" value="">No
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="corm-check-label">
+                                <input type="radio" class="form-check-input" value="">Yes
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,19 +144,34 @@
             <div class="row">
                 <div class="col-lg">
                     <div class="form-group">
-                        <fieldset id="available">
-                        <label for="available" >Best days to contact you:</label><br/>
-                        <input class="form-check-input" type="checkbox" value="" id="available">
-                        <label class="form-check-label" for="available">Monday</label><br/>
-                        <input class="form-check-input" type="checkbox" value="" id="available">
-                        <label class="form-check-label" for="available">Tuesday</label><br/>
-                        <input class="form-check-input" type="checkbox" value="" id="available">
-                        <label class="form-check-label" for="available">Wednesday</label><br/>
-                        <input class="form-check-input" type="checkbox" value="" id="available">
-                        <label class="form-check-label" for="available">Thursday</label><br/>
-                        <input class="form-check-input" type="checkbox" value="" id="available">
-                        <label class="form-check-label" for="available">Friday</label>
-                        </fieldset>
+                        <div class="form-check form-check-inline" id="available">
+                        <label for="available" >Best days to contact you:</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="available">
+                                <input class="form-check-input" type="checkbox" value="" id="available">M
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="available">
+                                <input class="form-check-input" type="checkbox" value="" id="available">T
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="available">
+                                <input class="form-check-input" type="checkbox" value="" id="available">W
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="available">
+                                <input class="form-check-input" type="checkbox" value="" id="available">T
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="available">
+                                <input class="form-check-input" type="checkbox" value="" id="available">F
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -223,17 +198,15 @@
                     if (x == "") {
                         alert("You have not completed a field that is required.");
                         return false;
-                    }
                 }
-            </script>
-            <script>
-                $('#contactForm')[0].checkValidity();
+                $('#contactForm')[0].validateForm();
                 var $contactForm = $('#contactForm');
-                if(! $contactForm[0].checkValidity()) {
+                if(! $contactForm[0].validateForm()) {
                     $contactForm.find(':submit').click();
                 }
+                }
             </script>
-                    
+            <noscript class="noscript">We're sorry, our website is best viewed with JavaScript. If you have disabled JavaScript, please turn it on to view our page.</noscript>
         </form>
     </body>
 </html>
