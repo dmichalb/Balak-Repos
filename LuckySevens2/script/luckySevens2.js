@@ -10,15 +10,15 @@ function rollDice() {
 function play() {
     var bet = document.forms["luckySevens"]["bet"].value;
     var money = bet;
-    var roll1 = rollDice;
-    var roll2 = rollDice
+    var roll1 = rollDice();
+    var roll2 = rollDice();
     var diceTotal = roll1+roll2;
     var moneyArray = [];
     
     while (money > 0) {
-        roll1;
-        roll2;
-        diceTotal;
+    var roll1 = rollDice();
+    var roll2 = rollDice();
+    var diceTotal = roll1+roll2;
         if (diceTotal != 7) {
             money --;
         } else {
